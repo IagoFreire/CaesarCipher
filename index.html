@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caesar Cipher</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <label id="title">Cifra de Cezar</label>
+
+        <div class="contentBox">
+          <img src="./assets/logo.jpg" alt="Cifra de Cezar" class="logo" />
+        </div>
+
+        <div class="box">
+          <label for="text">Texto:</label>
+
+          <input placeholder="Insira o texto" type="text" id="input" />
+
+          <span id="label">Key: </span>
+
+          <button onclick="prev(event)">-</button>
+
+          <span id="key">1</span>
+
+          <button onclick="next(event)">+</button><br /><br />
+        </div>
+
+        <button class="btn" type="button" onclick="calculate(event)">
+          Criptografar
+        </button>
+
+        <div class="result">
+          <div class="resultTitle">
+            <label>RESPOSTA</label>
+          </div>
+          <p>Cifrada: <span id="outputCript"></span></p>
+          <br />
+          <p>Decifrada: <span id="outputText"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
